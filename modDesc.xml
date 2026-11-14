@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="113">
+    <author>PropaineX</author>
+    <version>1.1.0.0</version>
+    <title>
+        <en>Production Boost</en>
+    </title>
+    <description>
+        <en><![CDATA[Speed up any production line: 1x, 2x, 5x or 10x.
+
+Open the Production Chains menu and pick a product. Under PRODUCTION you'll find "PRODUCTION LINE BOOST %" with four tick boxes. Every product has its own setting.
+
+What the boost does:
+- 1x: everything as normal.
+- 2x / 5x / 10x: cycles per month and costs per month are multiplied by 2, 5 or 10.
+- The recipe per cycle does not change, so the line uses 2, 5 or 10 times the materials and makes 2, 5 or 10 times the product each month.
+- The production's storage (incoming and outgoing) grows by the same amount. Several lines share one storage, so it follows the highest boost set on that production.
+
+Works with every production: base game, maps and mod productions.
+
+Multiplayer: only the farm manager can change the boost. Everyone else sees the setting greyed out. Settings are saved with the savegame.]]></en>
+    </description>
+    <iconFilename>icon_ProductionBoost.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/ProductionBoost.lua" />
+        <sourceFile filename="scripts/ProductionBoostEvent.lua" />
+        <sourceFile filename="scripts/ProductionBoostMenu.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="pb_heading"><en>PRODUCTION LINE BOOST %</en></text>
+    </l10n>
+</modDesc>
