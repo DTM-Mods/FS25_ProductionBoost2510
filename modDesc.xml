@@ -6,7 +6,9 @@
         <en>Production Boost</en>
     </title>
     <description>
-        <en><![CDATA[Speed up any production line: 1x, 2x, 5x or 10x.
+        <en><![CDATA[Description: Speeds up any production line 1x, 2x, 5x or 10x, set separately for every product.
+Hotkeys: none, the boost is set in the Production Chains menu: pick a product and tick a box under "PRODUCTION LINE BOOST %".
+GitHub: https://github.com/DTM-Mods/FS25_ProductionBoost2510
 
 Open the Production Chains menu and pick a product. Under PRODUCTION you'll find "PRODUCTION LINE BOOST %" with four tick boxes. Every product has its own setting.
 
@@ -22,7 +24,9 @@ Multiplayer: only the farm manager can change the boost. Everyone else sees the 
 
 Changelog 1.1.0.2:
 - Updated for the current game version (modDesc version 116).]]></en>
-        <de><![CDATA[Beschleunige jede Produktionslinie: 1x, 2x, 5x oder 10x.
+        <de><![CDATA[Beschreibung: Beschleunigt jede Produktionslinie 1x, 2x, 5x oder 10x, für jedes Produkt einzeln einstellbar.
+Tastenkombinationen: keine, der Boost wird im Menü Produktionsketten eingestellt: ein Produkt wählen und unter "PRODUCTION LINE BOOST %" ein Kästchen ankreuzen.
+GitHub: https://github.com/DTM-Mods/FS25_ProductionBoost2510
 
 Öffne das Menü Produktionsketten und wähle ein Produkt. Unter PRODUKTION findest du "PRODUCTION LINE BOOST %" mit vier Kästchen zum Ankreuzen. Jedes Produkt hat seine eigene Einstellung.
 
