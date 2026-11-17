@@ -1,5 +1,9 @@
 # Production Boost - Patch notes
 
+## 1.1.0.1
+- Meets the GIANTS ModHub checks (TestRunner): textures, icon and modDesc brought up to date.
+- Errors are no longer hidden: they show in the log.
+
 ## 1.1.0.0 (2026-11-14) - Storage boost
 - Storage capacities (incoming and outgoing) are multiplied by the boost too. All lines of a production share one
   storage, so it uses the highest boost set on any of its lines (one line at 5x, the rest 1x = 5x storage).

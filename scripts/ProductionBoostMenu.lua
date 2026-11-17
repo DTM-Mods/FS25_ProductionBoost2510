@@ -100,11 +100,12 @@ function ProductionBoostMenu.draw(frame)
     ProductionBoostMenu.activeFrame = frame
     ProductionBoostMenu.hitAreas = {}
 
-    if frame.getSelectedProduction == nil then
+    -- the menu's own lookup of the selected line (the game calls it the same way for its buttons)
+    if type(frame.getSelectedProduction) ~= "function" or frame.productsList == nil then
         return
     end
-    local ok, production, productionPoint = pcall(frame.getSelectedProduction, frame)
-    if not ok or production == nil or productionPoint == nil or production.id == nil then
+    local production, productionPoint = frame:getSelectedProduction()
+    if type(production) ~= "table" or productionPoint == nil or production.id == nil then
         return
     end
 
@@ -216,11 +217,10 @@ function ProductionBoostMenu.onLineChanged(productionPoint)
     local detailsList = frame.detailsList
     local viewOffset = detailsList ~= nil and detailsList.viewOffset or nil
     local section, index = frame.productsList:getSelectedPath()
-    local ok, err = pcall(frame.onListSelectionChanged, frame, frame.productsList, section, index)
-    if not ok then
-        ProductionBoost.log("refreshing the production details failed: %s", tostring(err))
-        return
+    if section == nil or index == nil then
+        return -- no product line selected, nothing to refresh
     end
+    frame:onListSelectionChanged(frame.productsList, section, index)
     if detailsList ~= nil and viewOffset ~= nil and detailsList.updateView ~= nil then
         detailsList.viewOffset, detailsList.targetViewOffset = viewOffset, viewOffset
         detailsList:updateView(true, true)
