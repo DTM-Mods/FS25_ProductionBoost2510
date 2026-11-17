@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="115">
+<modDesc descVersion="116">
     <author>PropaineX</author>
-    <version>1.1.0.1</version>
+    <version>1.1.0.2</version>
     <title>
         <en>Production Boost</en>
     </title>
@@ -20,9 +20,8 @@ Works with every production: base game, maps and mod productions.
 
 Multiplayer: only the farm manager can change the boost. Everyone else sees the setting greyed out. Settings are saved with the savegame.
 
-Changelog 1.1.0.1:
-- Meets the GIANTS ModHub checks (TestRunner): textures, icon and modDesc brought up to date.
-- Errors are no longer hidden: they show in the log.]]></en>
+Changelog 1.1.0.2:
+- Updated for the current game version (modDesc version 116).]]></en>
         <de><![CDATA[Beschleunige jede Produktionslinie: 1x, 2x, 5x oder 10x.
 
 Öffne das Menü Produktionsketten und wähle ein Produkt. Unter PRODUKTION findest du "PRODUCTION LINE BOOST %" mit vier Kästchen zum Ankreuzen. Jedes Produkt hat seine eigene Einstellung.
@@ -37,9 +36,8 @@ Funktioniert mit jeder Produktion: Grundspiel, Karten und Mod-Produktionen.
 
 Multiplayer: nur der Farmmanager kann den Boost ändern. Alle anderen sehen die Einstellung ausgegraut. Die Einstellungen werden mit dem Spielstand gespeichert.
 
-Changelog 1.1.0.1:
-- Erfüllt die GIANTS-ModHub-Prüfungen (TestRunner): Texturen, Icon und modDesc auf den neuesten Stand gebracht.
-- Fehler werden nicht mehr versteckt und erscheinen im Log.]]></de>
+Changelog 1.1.0.2:
+- An die aktuelle Spielversion angepasst (modDesc-Version 116).]]></de>
     </description>
     <iconFilename>icon_ProductionBoost.dds</iconFilename>
     <multiplayer supported="true" />
